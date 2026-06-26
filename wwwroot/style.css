@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f3f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-top: 0;
+}
+
+.form-box,
+.list-box {
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+.task {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-left: 6px solid #2563eb;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.task h3 {
+    margin: 0 0 8px 0;
+}
+
+.task p {
+    margin: 5px 0;
+}
+
+.status {
+    font-weight: bold;
+}

@@ -33,8 +33,9 @@ using (var scope = app.Services.CreateScope())
         db.SaveChanges();
     }
 }
-
-app.MapGet("/", () => "MiniTask API działa poprawnie");
+app.UseDefaultFiles();
+app.UseStaticFiles();
+app.MapGet("/api/status", () => "MiniTask API działa poprawnie");
 
 app.MapGet("/api/tasks", (AppDbContext db) =>
 {

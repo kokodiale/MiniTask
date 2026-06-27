@@ -18,6 +18,36 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 5px;
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #2563eb, #ec4899, #22c55e, #2563eb);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleGradient 5s ease infinite, titleFloat 2.5s ease-in-out infinite;
+}
+@keyframes titleGradient {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+@keyframes titleFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 .subtitle {

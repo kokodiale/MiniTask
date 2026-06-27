@@ -4,6 +4,36 @@ body {
     background: #f1f3f6;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    width: 140%;
+    height: 140%;
+   background:
+    linear-gradient(120deg, rgba(250, 204, 21, 0.22) 0 12%, transparent 12% 24%),
+    linear-gradient(60deg, rgba(234, 179, 8, 0.18) 0 10%, transparent 10% 22%),
+    linear-gradient(160deg, rgba(253, 224, 71, 0.20) 0 8%, transparent 8% 20%);
+    background-size: 260px 260px;
+    animation: moveStripes 12s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes moveStripes {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(120px, 80px);
+    }
 }
 
 .container {
@@ -13,6 +43,8 @@ body {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 1;
 }
 
 h1 {
